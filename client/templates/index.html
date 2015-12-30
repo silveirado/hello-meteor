@@ -1,0 +1,11 @@
+<div>
+	<h1>{{hello}}</h1>
+	<form class="new-task" ng-submit="addMessage(mensagem);mensagem=''">
+		<input name="text" ng-model="mensagem" placeholder="Adicione uma mensagem" type="text"/>
+	</form>
+	<ul>
+		<li ng-repeat="message in messages">
+			{{message.text}}
+		</li>
+	</ul>
+</div>
